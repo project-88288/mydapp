@@ -30,7 +30,7 @@ const App = () => {
     const prefetch = async () => {
       if (contractClient) {
         const { count } = await contractClient.getCountQuery();
-        setCount(count) 
+        setCount(count)
       }
       setUpdating(false)
     }
@@ -40,7 +40,7 @@ const App = () => {
   const onClickIncrement = async () => {
     if (contractClient) {
       setUpdating(true)
-      await contractClient.increment();  
+      await contractClient.increment();
       const { count } = await contractClient.getCountQuery();
       setCount(count)
       setUpdating(false)
@@ -59,7 +59,7 @@ const App = () => {
 
   return (
     <div className="App">
-         <ConnectWallet />
+      <ConnectWallet />
       <header className="App-header">
         <div style={{ display: 'inline' }}>
           COUNT: {count} {updating ? '(updating . . .)' : ''}
@@ -82,7 +82,7 @@ const App = () => {
           </div>
         )}
       </header>
-   
+
     </div>
   )
 }
