@@ -1,0 +1,10 @@
+{
+  "localterra": {
+    "mydapp": {
+      "codeId": "22",
+      "contractAddresses": {
+        "default": "terra1atd6qjhdexrvdp28sg7sgy5mcak35hqptcm4svp6fr9q6rvrx5psv0jnz7"
+      }
+    }
+  }
+}
